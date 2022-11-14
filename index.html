@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta property="og:image" content="/twcard.png"/>
+  <meta property="og:title" content="Random Password Generator"/>
+  <meta property="og:description" content="A random password generator with no ads, cookies, or popups. Generate a random password with any length to keep your accounts secure."/>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Random Password Generator">
+  <meta name="twitter:description" content="A random password generator with no ads, cookies, or popups. Generate a random password with any length to keep your accounts secure.">
+  <meta name="twitter:image" content="https://randompasswordgenerator.github.io/twcard.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <script src="util.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="content">
+    <h1>Random Password Generator</h1>
+    <h2>No ads, no popups, no bs</h2>
+    <div class="main">
+      <div class="top-row">
+        <span id="password"></span>
+        <span class="copy" onclick="copy()">copy</span>
+      </div>
+      <div class="middle-row">
+        <input type="checkbox" id="lowercase" checked>
+        <label for="lowercase">lowercase letters</label>
+        <input type="checkbox" id="uppercase" checked>
+        <label for="uppercase">uppercase letters</label>
+        <input type="checkbox" id="numbers" checked>
+        <label for="numbers">numbers</label>
+        <input type="checkbox" id="symbols" checked>
+        <label for="symbols">symbols</label>
+      </div>
+      <div class="bottom-row">
+        <input type="range" min="8" max="30"
+                value="16" id="length" oninput="onSliderChanged()">
+        <label for="length">length: 16</label>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <a href="/about.html">💡 about</a>
+    <a href="https://github.com/randompasswordgenerator/randompasswordgenerator.github.io" target="_blank">📜 source</a>
+    <a href="https://www.buymeacoffee.com/randompg" target="_blank">☕ buy me a coffee</a>
+  </div>
+</body>
+
+</html>
