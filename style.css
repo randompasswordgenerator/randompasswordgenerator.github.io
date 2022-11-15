@@ -103,11 +103,7 @@ h3 {
 }
 
 .footer {
-  /* position: absolute; */
-  /* bottom: 10px; */
   text-align: center;
-  /* left: 0; */
-  /* right: 0; */
   flex-shrink: 0;
 }
 
@@ -144,4 +140,110 @@ h3 {
   font-display: swap;
   src: url(scp.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@media (min-width:320px)  {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  h1 {
+    font-size: 5em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  #password {
+    font-size: 3em;
+  }
+  .copy {
+    font-size: 2em;
+  }
+  .middle-row {
+    height: 20em;
+    padding: 2em;
+    text-align: left;
+  }
+  .middle-row input {
+    scale: 3;
+    margin-right: 2em;
+  }
+  .middle-row label {
+    font-size: 3em;
+    line-height: 1.5em;
+  }
+  .middle-row label::after {
+    content: '\a';
+    white-space: pre;
+  }
+  .bottom-row label {
+    font-size: 3em;
+  }
+  .bottom-row input {
+    height: 1em;
+  }
+  .bottom-row input::-webkit-slider-thumb {
+    width: 1em;
+    height: 1em;
+  }
+  .footer {
+    font-size:3em;
+  }
+  .footer a {
+    display:block;
+    line-height: 1.5em;
+  }
+  .footer a::after {
+    content: '\a';
+  }
+}
+@media (min-width:481px)  {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width:641px)  {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width:961px)  {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width:1025px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  #password {
+    font-size:30px;
+  }
+  .copy {
+    font-size:16px;
+  }
+  .middle-row {
+    height:30px;
+  }
+  .middle-row input {
+    scale: 1;
+    margin-right: 0;
+  }
+  .middle-row label {
+    font-size: 16px;
+  }
+  .middle-row label::after {
+    content: '';
+    white-space: pre;
+  }
+  .bottom-row input {
+    height: 8px;
+  }
+  .bottom-row label {
+    font-size: 16px;
+  }
+  .footer {
+    font-size:16px;
+  }
+  .footer a {
+    display:inline;
+    line-height:40px;
+  }
+}
+@media (min-width:1281px) {
+  /* hi-res laptops and desktops */
 }
